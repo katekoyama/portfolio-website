@@ -1,0 +1,88 @@
+/*
+Colors used:
+White: #ffffff;
+Black: #000000;
+Gray 050: #f7f7f8;
+Gray 200: #c6c7cd;
+Gray 700: #5c5f6a;
+*/
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* Sets the line-height to 1.5 * the font-size */
+  color: #000000;
+}
+
+h1, h2, h3, h4{
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+h1{
+  font-size: 2.25; /* 36 px */
+}
+
+h2{
+  font-size: 2; /* 32 px */
+}
+
+h3{
+  font-size: 1.5; /* 24 px */
+}
+
+h4{
+  font-size: 1.25; /* 20 px */
+}
+
+img{
+width: 100%;
+}
+
+a{
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #c6c7cd;
+  font-weight: 700;
+}
+
+a:visited{
+
+}
+
+a:hover,
+a:focus{
+  text-decoration: underline;
+}
+
+a:active{
+  background-color: #000;
+  color: #ffffff;
+}
+
+.button{
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: #000000;
+  border-radius: 2px;
+}
+.button:hover{
+  text-decoration: none;
+  opacity: 0.8;
+}
+.button:active{
+  opacity: 0.6;
+}
+.button.secondary{
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+.button.secondary:hover{
+  color: #ffffff;
+  background-color: #000000 !important;
+  text-decoration: none;
+}
