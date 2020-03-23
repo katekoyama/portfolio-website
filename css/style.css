@@ -21,19 +21,19 @@ h1, h2, h3, h4{
 }
 
 h1{
-  font-size: 2.25; /* 36 px */
+  font-size: 2.25em; /* 36 px */
 }
 
 h2{
-  font-size: 2; /* 32 px */
+  font-size: 2em; /* 32 px */
 }
 
 h3{
-  font-size: 1.5; /* 24 px */
+  font-size: 1.5em; /* 24 px */
 }
 
 h4{
-  font-size: 1.25; /* 20 px */
+  font-size: 1.25em; /* 20 px */
 }
 
 img{
@@ -42,13 +42,11 @@ width: 100%;
 
 a{
   color: #000000;
-  text-decoration: underline;
-  text-decoration-color: #c6c7cd;
-  font-weight: 700;
+  text-decoration: none;
 }
-
+/* usually best to have a and a:visited the same color (also for privacy reasons)*/
 a:visited{
-
+  color: #000000;
 }
 
 a:hover,
@@ -63,19 +61,20 @@ a:active{
 
 .button{
   display: inline-block;
+  font-weight: 700;
   color: #ffffff;
-  text-decoration: none;
   padding: 12px 24px;
   background-color: #000000;
   border-radius: 2px;
 }
+.button:visited{
+  color:#ffffff;
+}
 .button:hover{
-  text-decoration: none;
   opacity: 0.8;
+  text-decoration: none;
 }
-.button:active{
-  opacity: 0.6;
-}
+
 .button.secondary{
   color: #000000;
   background-color: #ffffff;
@@ -83,6 +82,7 @@ a:active{
 }
 .button.secondary:hover{
   color: #ffffff;
-  background-color: #000000 !important;
+  background-color: #000000;
+  opacity: 1;
   text-decoration: none;
 }
