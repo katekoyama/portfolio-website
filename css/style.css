@@ -80,6 +80,9 @@ a:active{
   background-color: #ffffff;
   border: 1px solid #000000;
 }
+.button.secondary:visited{
+  text-decoration: none;
+}
 .button.secondary:hover{
   color: #ffffff;
   background-color: #000000;
