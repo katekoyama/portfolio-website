@@ -150,3 +150,7 @@ a:active{
 main{
   padding-top: 106px;
 }
+
+#footer h2{
+  text-align: center;
+}
