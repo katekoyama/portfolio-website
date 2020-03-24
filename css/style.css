@@ -159,9 +159,10 @@ main{
   padding-top: 106px;
 }
 
-#footer h2{
+#contact{
   text-align: center;
 }
+
 
 /* media queries */
 
@@ -206,6 +207,12 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-7{
+    width: 58.33%;
+  }
+  .col-lg-5{
+    width: 41.66%;
+  }
 }
 
 /* ==============================
