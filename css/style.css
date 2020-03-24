@@ -146,6 +146,13 @@ a:active{
 }
 #hero{
   display: inline-block;
+  text-align:center;
+}
+#hero span{
+  display:block;
+  font-size: 0.4425em;
+  font-weight: 400;
+  padding-top: 16px;
 }
 main{
   padding-top: 106px;
@@ -171,6 +178,9 @@ Medium devices (640px and larger)
   }
   nav > ul{
     margin: 4px;
+  }
+  main{
+    padding-top: 52px;
   }
 }
 
