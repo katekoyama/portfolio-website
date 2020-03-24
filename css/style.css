@@ -154,3 +154,34 @@ main{
 #footer h2{
   text-align: center;
 }
+
+/* media queries */
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header{
+    text-align: unset;
+  }
+
+  nav{
+    width: auto;
+    float: right;
+  }
+  nav > ul{
+    margin: 4px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
