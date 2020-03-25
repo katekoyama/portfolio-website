@@ -108,6 +108,16 @@ a:active{
 #hero h1{
   text-align: center;
   margin: 0;
+  padding-bottom: 0.875em;
+}
+#contact h2{
+  margin: 0;
+  padding-top: 1em;
+}
+.copyright{
+  margin: 0;
+  font-size: 0.75em;
+  padding: 2em 0;
 }
 header{
   z-index: 9999;
