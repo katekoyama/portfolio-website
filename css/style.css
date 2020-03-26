@@ -97,7 +97,7 @@ a:active{
 
 /* Layout styling */
 .container{
-  margin: 0 16px;
+  padding: 0 16px;
 }
 .box{
   display: block;
