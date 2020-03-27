@@ -71,6 +71,8 @@ a:active{
   background-color: #000000;
   border-radius: 2px;
   transition: 0.2s opacity;
+  width: 100%;
+  text-align: center;
 }
 .button:visited{
   color:#ffffff;
@@ -262,6 +264,9 @@ small devices (320px)
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  .button{
+    width:auto;
+  }
   header{
     text-align: unset;
   }
