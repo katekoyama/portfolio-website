@@ -13,7 +13,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.625em; /* Sets the line-height to 1.5 * the font-size */
+  line-height: 1.625; /* Sets the line-height to 1.5 * the font-size */
   color: #000000;
 }
 
@@ -119,6 +119,9 @@ a:active{
 }
 .box ul{
   padding-left: 1em;
+}
+.row{
+  padding-bottom: 48px;
 }
 #work .row {
   padding-bottom: 48px;
