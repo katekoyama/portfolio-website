@@ -97,6 +97,9 @@ a:focus{
 .container{
   padding: 0 16px;
 }
+.projecttitle{
+  text-align: center;
+}
 .box{
   display: block;
   padding: 1em;
@@ -136,9 +139,6 @@ a:focus{
   margin: 0;
   padding-bottom: 0.875em;
 }
-#top{
-  text-align: center;
-}
 #contact h2{
   margin: 0;
   padding-top: 1em;
@@ -159,18 +159,21 @@ a:focus{
   background-image: url(../img/energiewende/energiewende-risiko-main@2x.jpg);
   padding: 240px 0 0 0;
   background-size: cover;
+  /*background-attachment: fixed;*/
   background-position: center;
 }
 #fullbleed-pronto{
   background-image: url(../img/pronto-app/pronto_app@2x.jpg);
   padding: 240px 0 0 0;
   background-size: cover;
+  /*background-attachment: fixed;*/
   background-position: center;
 }
 #fullbleed-culture{
   background-image: url(../img/culturescape/culturescape_overview-main@2x.jpg);
   padding: 240px 0 0 0;
   background-size: cover;
+  /*background-attachment: fixed;*/
   background-position: center;
 }
 
@@ -284,15 +287,15 @@ Medium devices (640px and larger)
   }
   #fullbleed{
     background-image: url(../img/energiewende/energiewende-risiko@2x.jpg);
-    padding: 480px 0 0 0;
+    padding: 320px 0 0 0;
   }
   #fullbleed-pronto{
     background-image: url(../img/pronto-app/pronto_app@2x.jpg);
-    padding: 480px 0 0 0;
+    padding: 320px 0 0 0;
   }
   #fullbleed-culture{
     background-image: url(../img/culturescape/culturescape_overview-main@2x.jpg);
-    padding: 480px 0 0 0;
+    padding: 320px 0 0 0;
   }
   .col-md-6 > h3{
     margin-top: 0;
