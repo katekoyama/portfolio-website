@@ -232,13 +232,13 @@ nav > ul > li > a{
   text-decoration: none;
   display: block;
 }
+
 nav > ul > li > a:visited{
   color: #000000;
 }
 nav > ul > li > a:hover,
 nav >ul >li > a:active{
   color: #5c5f6a;
-  background-color: #ffffff;
   text-decoration: none;
 }
 .conclusion{
