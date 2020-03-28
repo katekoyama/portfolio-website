@@ -230,6 +230,7 @@ nav > ul{
 nav > ul > li > a{
   font-size: 0.875em;
   text-decoration: none;
+  display: block;
 }
 nav > ul > li > a:visited{
   color: #000000;
@@ -313,10 +314,19 @@ Medium devices (640px and larger)
   }
   nav > ul > li > a{
     padding: 0 16px;
+    display: inline;
   }
   /* ensures the links are displayed side by side */
+
   .navtoggle li:not(:last-child) {
   display: inline-block;
+}
+.navtoggle.responsive nav {
+  padding: 0;
+}
+.navtoggle.responsive li  {
+  padding: 0;
+
 }
 /* this will hide the hamburguer menu on larger screens */
 .navtoggle li:last-child {
