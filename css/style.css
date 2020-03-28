@@ -16,7 +16,9 @@ body{
   line-height: 1.625; /* Sets the line-height to 1.5 * the font-size */
   color: #000000;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 h1, h2, h3, h4{
   line-height: 1.5;
   font-weight: 700;
@@ -56,7 +58,6 @@ a:hover,
 a:focus{
   color: #5c5f6a;
 }
-
 
 .button{
   display: inline-block;
@@ -180,7 +181,7 @@ a:focus{
 header{
   z-index: 9999;
   background-color: #ffffff;
-  text-align: center;
+  /*text-align: center;*/
   padding: 10px 0;
   box-shadow: 2px 4px 8px rgba(92, 95, 106, 0.2);
   position: fixed;
@@ -194,17 +195,41 @@ header{
 nav > ul{
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-/* nav > ul > il selects list elements in unordered lists within the nav element */
-nav > ul > li{
-  display: inline-block;
+/* this will hide the nav links except for the last one */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+/* this will make the font awesome icon in the nav bigger*/
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 /* selects links that are list elements within an unordered list within the nav element */
 nav > ul > li > a{
   font-size: 0.875em;
   text-decoration: none;
-  padding: 0 16px;
 }
 nav > ul > li > a:visited{
   color: #000000;
@@ -252,7 +277,7 @@ footer ul > li > a{
   padding-top: 16px;
 }
 main{
-  padding-top: 106px;
+  padding-top: 52px;
 }
 
 
@@ -282,6 +307,21 @@ Medium devices (640px and larger)
   nav > ul{
     margin: 4px;
   }
+  /* nav > ul > il selects list elements in unordered lists within the nav element */
+  nav > ul > li{
+    display: inline-block;
+  }
+  nav > ul > li > a{
+    padding: 0 16px;
+  }
+  /* ensures the links are displayed side by side */
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+/* this will hide the hamburguer menu on larger screens */
+.navtoggle li:last-child {
+  display: none;
+}
   main{
     padding-top: 52px;
   }

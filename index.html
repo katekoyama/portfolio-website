@@ -39,16 +39,23 @@
   <body id="home page">
     <!-- START HEADER SECTION -->
     <header>
-      <div class="container">
-        <a class="logo" href="index.html">KKM design</a>
-        <nav>
-          <ul>
-            <li><a href="index.html" class="active">Work</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+        <div class="container">
+          <!-- mobile menu -->
+          <div class="navtoggle" id="myNavtoggle">
+          <a class="logo" href="index.html">KKM design</a>
+          <nav>
+            <ul>
+              <li><a href="index.html" class="active">Work</a></li>
+              <li><a href="about.html" class="active">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+          </div>
+
+        </div>
+
     </header>
     <!-- END HEADER SECTION -->
 
