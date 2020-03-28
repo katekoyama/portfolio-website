@@ -21,7 +21,7 @@ html {
 }
 h1, h2, h3, h4{
   line-height: 1.5;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 h1{
@@ -137,6 +137,7 @@ a:focus{
   margin: 48px 0px;
 }
 #hero h1{
+  font-weight: 300;
   text-align: center;
   margin: 0;
   padding-bottom: 0.875em;
@@ -156,7 +157,10 @@ a:focus{
 .smllpic img{
   max-width: 720px;
 }
-
+.iconhome{
+  padding-top: 48px;
+  font-size: 2em;
+}
 #fullbleed{
   background-image: url(../img/energiewende/energiewende-risiko-main@2x.jpg);
   padding: 240px 0 0 0;
@@ -268,7 +272,7 @@ footer ul > li > a{
 
 #hero{
   text-align:center;
-  background-color: #f7f7f8;
+  background-color: #FFFFFF;
   padding: 4em 0;
 
 }
@@ -295,6 +299,10 @@ small devices (320px)
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+.h1paragraph{
+  font-size: 20px;
+}
+
   .button{
     width:auto;
   }
@@ -336,6 +344,7 @@ Medium devices (640px and larger)
   main{
     padding-top: 52px;
   }
+
   #fullbleed{
     background-image: url(../img/energiewende/energiewende-risiko@2x.jpg);
     padding: 320px 0 0 0;
