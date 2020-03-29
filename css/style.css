@@ -284,12 +284,11 @@ footer ul > li > a{
 .imglink a{
   text-decoration: none;
 }
-.animate{
-  animation-play-state: paused;
+.animate .pencil {
+    animation-play-state: paused;
 }
-.animate:hover{
-  background-color: #f7f7f8;
-  animation-play-state: running;
+.animate:hover .pencil {
+    animation-play-state: running;
 }
 #hero > .container > p{
   max-width: 680px;
