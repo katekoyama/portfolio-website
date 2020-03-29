@@ -279,7 +279,7 @@ footer ul > li > a{
 .imglink li{
   display: inline-block;
   padding: 24px 16px;
-  width: 160px;
+  width: 120px;
 }
 .imglink a{
   text-decoration: none;
@@ -321,7 +321,11 @@ Medium devices (640px and larger)
 .h1paragraph{
   font-size: 20px;
 }
-
+.imglink li{
+  display: inline-block;
+  padding: 24px 16px;
+  width: 160px;
+}
   .button{
     width:auto;
   }
@@ -509,4 +513,17 @@ X-large devices (1440px or larger)
 }
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+@keyframes pencil-move {
+  from {transform: translate(-10px,0px);}
+  to {transform: translate(0px,0px);}
+}
+.pencil{
+  animation-duration: 1s;
+  animation-name: pencil-move;
+  animation-iteration-count:1;
+  animation-timing-function: linear;
+}
+@keyframes line{
+
 }
