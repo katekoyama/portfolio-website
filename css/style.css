@@ -273,7 +273,7 @@ footer ul > li > a{
 }
 .imglink ul{
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 32px 0;
   margin: 0;
 }
 .imglink li{
