@@ -284,6 +284,13 @@ footer ul > li > a{
 .imglink a{
   text-decoration: none;
 }
+.animate{
+  animation-play-state: paused;
+}
+.animate:hover{
+  background-color: #f7f7f8;
+  animation-play-state: running;
+}
 #hero > .container > p{
   max-width: 680px;
   margin: auto;
@@ -521,9 +528,6 @@ X-large devices (1440px or larger)
 .pencil{
   animation-duration: 1s;
   animation-name: pencil-move;
-  animation-iteration-count:1;
+  animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
-@keyframes line{
-
 }
