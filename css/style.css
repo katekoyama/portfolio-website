@@ -290,6 +290,30 @@ footer ul > li > a{
 .animate:hover .pencil {
     animation-play-state: running;
 }
+.animate .film {
+    animation-play-state: paused;
+}
+.animate:hover .film {
+    animation-play-state: running;
+}
+.animate .userinterface {
+    animation-play-state: paused;
+}
+.animate:hover .userinterface {
+    animation-play-state: running;
+}
+.animate .palette {
+    animation-play-state: paused;
+}
+.animate:hover .palette {
+    animation-play-state: running;
+}
+.animate .design {
+    animation-play-state: paused;
+}
+.animate:hover .design {
+    animation-play-state: running;
+}
 #hero > .container > p{
   max-width: 680px;
   margin: auto;
@@ -528,5 +552,47 @@ X-large devices (1440px or larger)
   animation-duration: 1s;
   animation-name: pencil-move;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function:ease-in;
+}
+@keyframes film-rotate{
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-10deg);}
+}
+.film{
+  transform-origin: bottom left;
+  animation-duration: 1s;
+  animation-name: film-rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+}
+@keyframes userinterface-position{
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(5px,5px);}
+}
+.userinterface{
+  animation-duration: 1s;
+  animation-name: userinterface-position;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+}
+@keyframes palette-position{
+  from {transform: rotate(-5deg);}
+  to {transform: rotate(5deg);}
+}
+.palette{
+  transform-origin: bottom left;
+  animation-duration: 1s;
+  animation-name: palette-position;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+}
+@keyframes design-position{
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(0px,-14px);}
+}
+.design{
+  animation-duration: 1s;
+  animation-name: design-position;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease;
 }
