@@ -274,12 +274,16 @@ footer ul > li > a{
 .imglink ul{
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 .imglink li{
   display: inline-block;
-  padding: 0 16px;
+  padding: 24px 16px;
+  width: 160px;
 }
-
+.imglink a{
+  text-decoration: none;
+}
 #hero > .container > p{
   max-width: 680px;
   margin: auto;
