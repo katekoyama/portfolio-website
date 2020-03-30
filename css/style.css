@@ -6,130 +6,152 @@ Gray 050: #f7f7f8;
 Gray 200: #c6c7cd;
 Gray 700: #5c5f6a;
 */
-*{
-  box-sizing: border-box;/* padding and border are included within the final width */
+* {
+  box-sizing: border-box;
+
+  /* padding and border are included within the final width */
 }
-body{
+
+body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.625; /* Sets the line-height to 1.5 * the font-size */
-  color: #000000;
+  line-height: 1.625;
+  color: #000;
 }
+
 html {
   scroll-behavior: smooth;
 }
-h1, h2, h3, h4{
+
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.5;
   font-weight: 300;
 }
 
-h1{
-  font-size: 2.25em; /* 36 px */
+h1 {
+  font-size: 2.25em;
 }
 
-h2{
-  font-size: 2em; /* 32 px */
+h2 {
+  font-size: 2em;
   text-align: center;
 }
 
-h3{
-  font-size: 1.5em; /* 24 px */
+h3 {
+  font-size: 1.5em;
 }
 
-h4{
-  font-size: 1.25em; /* 20 px */
+h4 {
+  font-size: 1.25em;
 }
 
-img{
-width: 100%;
+img {
+  width: 100%;
 }
 
-a{
-  color: #000000;
+a {
+  color: #000;
   text-decoration: underline;
 }
-/* usually best to have a and a:visited the same color (also for privacy reasons)*/
-a:visited{
-  color: #000000;
+
+a:visited {
+  color: #000;
 }
 
 a:hover,
-a:focus{
+a:focus {
   color: #5c5f6a;
 }
 
-.button{
+.button {
   display: inline-block;
   text-decoration: none;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   padding: 12px 24px;
-  background-color: #000000;
+  background-color: #000;
   border-radius: 2px;
   transition: 0.2s opacity;
   width: 100%;
   text-align: center;
 }
-.button:visited{
-  color:#ffffff;
+
+.button:visited {
+  color: #fff;
 }
-.button:hover{
+
+.button:hover {
   opacity: 0.8;
 }
 
-.button.secondary{
-  color: #000000;
-  background-color: #ffffff;
-  border: 1px solid #000000;
+.button.secondary {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
   transition: 0.3s background-color, 0.3s color;
 }
-.button.secondary:visited{
+
+.button.secondary:visited {
   text-decoration: none;
 }
-.button.secondary:hover{
-  color: #ffffff;
-  background-color: #000000;
+
+.button.secondary:hover {
+  color: #fff;
+  background-color: #000;
   opacity: 1;
   text-decoration: none;
 }
-.bttncenter{
+
+.bttncenter {
   text-align: center;
-  padding: 24px 0 48px 0;
+  padding: 24px 0 48px;
 }
 
 /* Layout styling */
-.container{
+.container {
   padding: 0 16px;
 }
-.projecttitle{
+
+.projecttitle {
   text-align: center;
 }
-.box{
+
+.box {
   display: block;
   padding: 1em;
 }
-.text{
+
+.text {
   max-width: 680px;
   margin: 0 auto;
 }
-.paragraph-last{
+
+.paragraph-last {
   padding-bottom: 48px;
 }
-.lgparagraph{
+
+.lgparagraph {
   margin: 2em auto 0;
   font-size: 1.125em;
 }
-.box h3{
+
+.box h3 {
   margin-top: 0;
 }
-.box ul{
+
+.box ul {
   padding-left: 1em;
 }
-.row{
+
+.row {
   padding-bottom: 48px;
 }
-.toplink{
+
+.toplink {
   padding-bottom: 24px;
   text-align: center;
   text-decoration: none;
@@ -138,83 +160,93 @@ a:focus{
 #work .row {
   padding-bottom: 48px;
   border-bottom: 1px solid #c6c7cd;
-  margin: 48px 0px;
+  margin: 48px 0;
 }
-#hero h1{
+
+#hero h1 {
   font-weight: 300;
   text-align: center;
   margin: 0;
   padding-bottom: 0.875em;
 }
-#contact h2{
+
+#contact h2 {
   margin: 0;
   padding-top: 1em;
 }
-.copyright{
+
+.copyright {
   margin: 0;
   font-size: 0.75em;
   padding: 2em 0;
 }
+
 .center {
   text-align: center;
 }
-.smllpic img{
+
+.smllpic img {
   max-width: 720px;
 }
-.iconhome{
+
+.iconhome {
   padding-top: 48px;
   font-size: 2em;
 }
-#fullbleed{
+
+#fullbleed {
   background-image: url(../img/energiewende/energiewende-risiko-main@2x.jpg);
-  padding: 240px 0 0 0;
+  padding: 240px 0 0;
   background-size: cover;
-  /*background-attachment: fixed;*/
-  background-position: center;
-}
-#fullbleed-pronto{
-  background-image: url(../img/pronto-app/pronto_app@2x.jpg);
-  padding: 240px 0 0 0;
-  background-size: cover;
-  /*background-attachment: fixed;*/
-  background-position: center;
-}
-#fullbleed-culture{
-  background-image: url(../img/culturescape/culturescape_overview-main@2x.jpg);
-  padding: 240px 0 0 0;
-  background-size: cover;
-  /*background-attachment: fixed;*/
   background-position: center;
 }
 
-header{
+#fullbleed-pronto {
+  background-image: url(../img/pronto-app/pronto_app@2x.jpg);
+  padding: 240px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+#fullbleed-culture {
+  background-image: url(../img/culturescape/culturescape_overview-main@2x.jpg);
+  padding: 240px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
   z-index: 9999;
-  background-color: #ffffff;
-  /*text-align: center;*/
+  background-color: #fff;
   padding: 10px 0;
   box-shadow: 2px 4px 8px rgba(92, 95, 106, 0.2);
   position: fixed;
   width: 100%;
 }
-.logo{
+
+.logo {
   font-size: 1.25em;
   font-weight: 700;
   text-decoration: none;
 }
-nav > ul{
+
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 /* this will hide the nav links except for the last one */
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
-/* this will make the font awesome icon in the nav bigger*/
+
+/* this will make the font awesome icon in the nav bigger */
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -223,313 +255,375 @@ nav > ul{
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li:last-child  {
+
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 /* selects links that are list elements within an unordered list within the nav element */
-nav > ul > li > a{
+nav > ul > li > a {
   font-size: 0.875em;
   text-decoration: none;
   display: block;
 }
 
-nav > ul > li > a:visited{
-  color: #000000;
+nav > ul > li > a:visited {
+  color: #000;
 }
+
 nav > ul > li > a:hover,
-nav >ul >li > a:active{
+nav > ul > li > a:active {
   color: #5c5f6a;
   text-decoration: none;
 }
-.conclusion{
+
+.conclusion {
   text-align: center;
 }
-footer{
+
+footer {
   background-color: #f7f7f8;
   text-align: center;
 }
-footer ul{
+
+footer ul {
   list-style-type: none;
   padding: 0;
 }
-footer li{
+
+footer li {
   display: inline-block;
   padding: 0 8px;
 }
-footer ul > li > a{
+
+footer ul > li > a {
   font-size: 2em;
 }
-.imglink{
+
+.imglink {
   text-align: center;
 }
-.imglink ul{
+
+.imglink ul {
   list-style-type: none;
-  padding: 0 0 32px 0;
+  padding: 0 0 32px;
   margin: 0;
 }
-.imglink li{
+
+.imglink li {
   display: inline-block;
   padding: 24px 16px;
   width: 120px;
 }
-.imglink a{
+
+.imglink a {
   text-decoration: none;
 }
+
 .animate .pencil {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
+
 .animate:hover .pencil {
-    animation-play-state: running;
+  animation-play-state: running;
 }
+
 .animate .film {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
+
 .animate:hover .film {
-    animation-play-state: running;
+  animation-play-state: running;
 }
+
 .animate .userinterface {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
+
 .animate:hover .userinterface {
-    animation-play-state: running;
+  animation-play-state: running;
 }
+
 .animate .palette {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
+
 .animate:hover .palette {
-    animation-play-state: running;
+  animation-play-state: running;
 }
+
 .animate .design {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
+
 .animate:hover .design {
-    animation-play-state: running;
+  animation-play-state: running;
 }
-#hero > .container > p{
+
+#hero > .container > p {
   max-width: 680px;
   margin: auto;
 }
 
-#hero{
-  text-align:center;
-  background-color: #FFFFFF;
+#hero {
+  text-align: center;
+  background-color: #fff;
   padding: 4em 0;
-
 }
-#hero span{
-  display:block;
+
+#hero span {
+  display: block;
   font-size: 0.4425em;
   font-weight: 400;
   padding-top: 16px;
 }
-main{
+
+main {
   padding-top: 52px;
-}
-
-
-/* media queries */
-/* ==============================
-small devices (320px)
-================================= */
-@media only screen and (min-width: 320px) {
-
 }
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-.h1paragraph{
-  font-size: 20px;
-}
-.imglink li{
-  display: inline-block;
-  padding: 24px 16px;
-  width: 160px;
-}
-  .button{
-    width:auto;
+  .h1paragraph {
+    font-size: 20px;
   }
-  header{
+
+  .imglink li {
+    display: inline-block;
+    padding: 24px 16px;
+    width: 160px;
+  }
+
+  .button {
+    width: auto;
+  }
+
+  header {
     text-align: unset;
   }
 
-  nav{
+  nav {
     width: auto;
     float: right;
   }
-  nav > ul{
+
+  nav > ul {
     margin: 4px;
   }
+
   /* nav > ul > il selects list elements in unordered lists within the nav element */
-  nav > ul > li{
+  nav > ul > li {
     display: inline-block;
   }
-  nav > ul > li > a{
+
+  nav > ul > li > a {
     padding: 0 16px;
     display: inline;
   }
+
   /* ensures the links are displayed side by side */
-
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle.responsive nav {
-  padding: 0;
-}
-.navtoggle.responsive li  {
-  padding: 0;
+    display: inline-block;
+  }
 
-}
-/* this will hide the hamburguer menu on larger screens */
-.navtoggle li:last-child {
-  display: none;
-}
-  main{
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0;
+  }
+
+  /* this will hide the hamburguer menu on larger screens */
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  main {
     padding-top: 52px;
   }
 
-  #fullbleed{
+  #fullbleed {
     background-image: url(../img/energiewende/energiewende-risiko@2x.jpg);
-    padding: 320px 0 0 0;
+    padding: 320px 0 0;
   }
-  #fullbleed-pronto{
+
+  #fullbleed-pronto {
     background-image: url(../img/pronto-app/pronto_app@2x.jpg);
-    padding: 320px 0 0 0;
+    padding: 320px 0 0;
   }
-  #fullbleed-culture{
+
+  #fullbleed-culture {
     background-image: url(../img/culturescape/culturescape_overview-main@2x.jpg);
-    padding: 320px 0 0 0;
+    padding: 320px 0 0;
   }
-  .col-md-6 > h3{
+
+  .col-md-6 > h3 {
     margin-top: 0;
   }
+
   .col-md-1 {
     width: 8.33%;
   }
+
   .col-md-2 {
     width: 16.66%;
   }
+
   .col-md-3 {
     width: 25%;
   }
+
   .col-md-4 {
     width: 33.33%;
   }
+
   .col-md-5 {
     width: 41.66%;
   }
+
   .col-md-6 {
     width: 50%;
   }
+
   .col-md-7 {
     width: 58.33%;
   }
+
   .col-md-8 {
     width: 66.66%;
   }
+
   .col-md-9 {
     width: 75%;
   }
+
   .col-md-10 {
     width: 83.33%;
   }
+
   .col-md-11 {
     width: 91.66%;
   }
+
   .col-md-12 {
     width: 100%;
   }
+
   [class*="col-"] {
-  float: left;
-  padding: 0 24px;
-  }
-  .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    float: left;
+    padding: 0 24px;
   }
 
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
-  .col-lg-7{
+  .col-lg-7 {
     text-align: left;
   }
 
   .col-lg-1 {
     width: 8.33%;
   }
+
   .col-lg-2 {
     width: 16.66%;
   }
+
   .col-lg-3 {
-    width: 25%;}
-  .col-lg-4 {width: 33.33%;
+    width: 25%;
   }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
   .col-lg-5 {
     width: 41.66%;
   }
+
   .col-lg-6 {
     width: 50%;
   }
+
   .col-lg-7 {
     width: 58.33%;
   }
+
   .col-lg-8 {
     width: 66.66%;
   }
+
   .col-lg-9 {
     width: 75%;
   }
+
   .col-lg-10 {
     width: 83.33%;
   }
+
   .col-lg-11 {
     width: 91.66%;
   }
+
   .col-lg-12 {
     width: 100%;
   }
-  .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  }
-}
 
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* animation using CSS */
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -537,62 +631,104 @@ X-large devices (1440px or larger)
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 @keyframes pencil-move {
-  from {transform: translate(-10px,0px);}
-  to {transform: translate(0px,0px);}
+  from {
+    transform: translate(-10px, 0);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
 }
-.pencil{
+
+.pencil {
   animation-duration: 1s;
   animation-name: pencil-move;
   animation-iteration-count: infinite;
-  animation-timing-function:ease-in;
+  animation-timing-function: ease-in;
 }
-@keyframes film-rotate{
-  from {transform: rotate(0deg);}
-  to {transform: rotate(-10deg);}
+
+@keyframes film-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-10deg);
+  }
 }
-.film{
+
+.film {
   transform-origin: bottom left;
   animation-duration: 1s;
   animation-name: film-rotate;
   animation-iteration-count: infinite;
-  animation-timing-function:ease-in-out;
+  animation-timing-function: ease-in-out;
 }
-@keyframes userinterface-position{
-  from {transform: translate(0px, 0px);}
-  to {transform: translate(5px,5px);}
+
+@keyframes userinterface-position {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(5px, 5px);
+  }
 }
-.userinterface{
+
+.userinterface {
   animation-duration: 1s;
   animation-name: userinterface-position;
   animation-iteration-count: infinite;
-  animation-timing-function:ease-in-out;
+  animation-timing-function: ease-in-out;
 }
-@keyframes palette-position{
-  from {transform: rotate(-5deg);}
-  to {transform: rotate(5deg);}
+
+@keyframes palette-position {
+  from {
+    transform: rotate(-5deg);
+  }
+
+  to {
+    transform: rotate(5deg);
+  }
 }
-.palette{
+
+.palette {
   transform-origin: bottom left;
   animation-duration: 1s;
   animation-name: palette-position;
   animation-iteration-count: infinite;
-  animation-timing-function:ease-in-out;
+  animation-timing-function: ease-in-out;
 }
-@keyframes design-position{
-  from {transform: translate(0px, 0px);}
-  to {transform: translate(0px,-14px);}
+
+@keyframes design-position {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(0, -14px);
+  }
 }
-.design{
+
+.design {
   animation-duration: 1s;
   animation-name: design-position;
   animation-iteration-count: infinite;
-  animation-timing-function:ease;
+  animation-timing-function: ease;
 }
