@@ -403,6 +403,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   background-color: red;
+  justify-content: center;
 }
 
 .flex-container > div {
