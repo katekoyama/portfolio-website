@@ -145,7 +145,7 @@ a:focus {
 
 .lgparagraph {
   margin: 2em auto 0;
-  font-size: 1.125em;
+  font-size: 1.375em;
 }
 
 .box h3 {
@@ -399,24 +399,66 @@ main {
   padding-top: 52px;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: red;
-  justify-content: center;
+.container-grid {
+  margin: 16px 8px;
 }
 
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 220px;
-  height: auto;
-  margin: 24px;
+.row-grid {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column a:hover {
+  opacity: 0.9;
+}
+
+.img-bttn-container {
+  position: relative;
+  width: 100%;
+}
+
+.img-bttn-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.img-bttn-text a {
+  color: white;
+  font-size: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.img-container:hover{
-  opacity: 0.9;
-  background-color: #fa6019;
+.img-bttn-text a:hover {
+  text-decoration: underline;
 }
 
 /* ==============================
@@ -497,6 +539,13 @@ Medium devices (640px and larger)
     padding: 320px 0 0;
   }
 
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+
   .col-md-6 > h3 {
     margin-top: 0;
   }
@@ -565,6 +614,13 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
   .col-lg-7 {
     text-align: left;
   }
@@ -595,6 +651,7 @@ Large devices (1024px or larger)
 
   .col-lg-7 {
     width: 58.33%;
+    padding: 0 72px;
   }
 
   .col-lg-8 {
@@ -622,57 +679,10 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-}
 
-/* animation using CSS */
-@keyframes color-change {
-  0% {
-    fill: #edc655;
+  .container-grid {
+    margin: 24px 16px;
   }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 @keyframes pencil-move {
