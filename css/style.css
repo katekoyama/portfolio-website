@@ -419,14 +419,15 @@ main {
   width: 100%;
 }
 
-.column a:hover {
-  opacity: 0.9;
-}
-
 .img-bttn-container {
   position: relative;
   width: 100%;
   display: block;
+}
+
+.img-grid {
+  display: block;
+  margin-bottom: 8px;
 }
 
 .overlay {
@@ -439,7 +440,7 @@ main {
   width: 100%;
   opacity: 0;
   transition: 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .img-bttn-container:hover .overlay {
@@ -456,20 +457,6 @@ main {
   left: 50%;
   text-decoration: none;
   transform: translate(-50%, -50%);
-}
-
-.img-bttn-text a {
-  font-size: 1em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-decoration: none;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.img-bttn-text a:hover {
-  text-decoration: underline;
 }
 
 /* ==============================
