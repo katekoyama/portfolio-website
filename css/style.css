@@ -156,7 +156,7 @@ a:focus {
 }
 
 .row {
-  padding-bottom: 48px;
+  padding-bottom: 100px;
 }
 
 .toplink {
@@ -167,7 +167,6 @@ a:focus {
 
 #work .row {
   padding-top: 100px;
-  margin-bottom: 48px;
   border-bottom: 1px solid #c6c7cd;
 }
 
