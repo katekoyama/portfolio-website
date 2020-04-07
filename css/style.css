@@ -419,14 +419,11 @@ main {
 }
 
 .img-bttn-container {
+  line-height: 0;
+  margin-bottom: 8px;
   position: relative;
   width: 100%;
   display: block;
-}
-
-.img-grid {
-  display: block;
-  margin-bottom: 8px;
 }
 
 .overlay {
@@ -447,6 +444,7 @@ main {
 }
 
 .img-bttn-text {
+  line-height: 1.5;
   text-align: center;
   vertical-align: middle;
   color: white;
