@@ -456,6 +456,42 @@ main {
   transform: translate(-50%, -50%);
 }
 
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #f7f7f8;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  padding: 12px 24px;
+  background-color: #000;
+  border-radius: 2px;
+  transition: 0.2s opacity;
+  width: 100%;
+  text-align: center;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -544,6 +580,19 @@ Medium devices (640px and larger)
     flex: 50%;
     max-width: 50%;
     padding: 0 4px;
+  }
+
+  .contact-form {
+    margin: 0 auto;
+    max-width: 600px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  input[type=submit] {
+    width: auto;
   }
 
   .col-md-6 > h3 {

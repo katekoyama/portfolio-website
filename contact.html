@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kate Koyama · Creative designer</title>
+
+  <!-- FONT AWESOME KIT -->
+  <script src="https://kit.fontawesome.com/274424f66b.js" crossorigin="anonymous">
+    Set - Cookie: < cookie - name >= < cookie - value > ;
+    Secure
+    Set - Cookie: < cookie - name >= < cookie - value > ;
+    SameSite = Strict
+  </script>
+
+  <!-- FAV icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0//favicon-16x16.png">
+  <link rel="manifest" href="favicon_package_v0/site.webmanifest">
+  <link rel="mask-icon" href="favicon_package_v0/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- NORMALIZE LINK -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <!-- START STYLESHEET -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- END STYLESHEET -->
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- VIEWPORT -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body id="about page">
+  <!-- START HEADER SECTION -->
+  <header>
+    <div class="container">
+      <!-- mobile menu -->
+      <div class="navtoggle" id="myNavtoggle">
+        <a class="logo" href="index.html">KKM design</a>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Work</a></li>
+            <li><a href="about2.html" class="active">About</a></li>
+            <li><a href="contact.html" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+  </header>
+  <!-- END HEADER SECTION -->
+
+  <!-- START MAIN CONTENT SECTION -->
+  <main>
+
+    <div class="container">
+      <div>
+        <h2>Contact me</h2>
+      </div>
+
+      <div class="contact-form">
+        <form action="/action_page.php">
+
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="John Doe">
+
+        <form action="/action_page.php">
+        <label for="fname">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="john.doe@email.com">
+
+        <label for="subject">Message</label>
+        <textarea id="subject" name="message" placeholder="Write your message here..." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </main>
+  <!-- END MAIN CONTENT SECTION -->
+
+
+
+  <!-- START OF FOOTER -->
+  <footer id="contact">
+    <div class="container">
+      <h2>Get in touch</h2>
+      <p>Let's work together!</p>
+
+      <!-- START BUTTON CONTAINER -->
+      <div>
+        <a href="mailto:test@email.com" class="button secondary">Email me</a>
+      </div>
+      <!-- END BUTTON CONTAINER -->
+
+      <!-- START SOCIAL MEDIA CONTAINER -->
+      <div class="footer">
+        <ul>
+          <li><a href="https://www.facebook.com" aria-label="Facebook" target="blank">
+              <i class="fab fa-facebook-square"></i></a></li>
+
+          <li><a href="https://www.vimeo.com" aria-label="Vimeo" target="blank">
+              <i class="fab fa-vimeo-square"></i></a></li>
+
+          <li><a href="https://www.instagram.com"  aria-label="Instagram" target="blank">
+              <i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <!-- END SOCIAL MEDIA CONTAINER -->
+
+      <p class="copyright">Copyright Kate Koyama Design 2020</p>
+    </div>
+  </footer>
+  <!-- END OF FOOTER -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
+</body>
+<!-- END OF BODY -->
+
+</html>
