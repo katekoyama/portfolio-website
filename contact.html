@@ -69,10 +69,11 @@
       </div>
 
       <div class="contact-form">
-        <form action="/action_page.php">
 
-        <label for="fname">Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="John Doe">
+        <form action="index.php" method="post">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="firstname" placeholder="John Doe">
 
         <form action="/action_page.php">
         <label for="fname">E-mail</label>
@@ -80,6 +81,9 @@
 
         <label for="subject">Message</label>
         <textarea id="subject" name="message" placeholder="Write your message here..." style="height:200px"></textarea>
+
+        <label>*What is 2+2? (Anti-spam)</label>
+        <input name="human" placeholder="Type Here">
 
         <input type="submit" value="Submit">
 
