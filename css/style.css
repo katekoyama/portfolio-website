@@ -473,6 +473,7 @@ input[type=submit] {
   cursor: pointer;
   font-weight: 700;
   color: #fff;
+  line-height: 1.625;
   padding: 12px 24px;
   background-color: #000;
   border-radius: 2px;
@@ -490,6 +491,12 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
   margin-bottom: 40px;
+}
+
+.caption {
+  font-size: 0.75em;
+  font-style: italic;
+  letter-spacing: 0.05em;
 }
 
 /* ==============================

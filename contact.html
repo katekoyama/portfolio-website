@@ -70,21 +70,25 @@
 
       <div class="contact-form">
 
+        <p>Drop me a note and just say hi. You can email me at
+          <a href="mailto:email@email.com.">email@emailhost.com</a>
+        Or fill out the contact form below.</p>
+
         <form action="index.php" method="post">
 
-        <label for="name">Name</label>
+        <label for="name">Name<span class="caption"> (Required)</span></label>
         <input type="text" id="name" name="firstname" placeholder="John Doe">
 
-        <label for="email">E-mail</label>
+        <label for="email">E-mail<span class="caption"> (Required)</span></label>
         <input type="text" id="email" name="email" placeholder="john.doe@email.com">
 
-        <label for="subject">Message</label>
+        <label for="subject">Message<span class="caption"> (Required)</span></label>
         <textarea id="subject" name="message" placeholder="Write your message here..." style="height:200px"></textarea>
 
-        <label>*What is 2+2? (Anti-spam)</label>
-        <input name="human" placeholder="Type Here">
+        <label>What is 2+2?<span class="caption"> (Required)</span></label>
+        <input type="text" name="human" placeholder="Type Here">
 
-        <input type="submit" value="Submit">
+        <p><input type="submit" value="Submit" class="button"></p>
 
         </form>
 
