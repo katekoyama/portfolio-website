@@ -177,15 +177,9 @@ a:focus {
   padding-bottom: 0.875em;
 }
 
-#contact h2 {
-  margin: 0;
-  padding-top: 1em;
-}
-
 .copyright {
   margin: 0;
   font-size: 0.75em;
-  padding: 2em 0;
 }
 
 .center {
@@ -297,7 +291,6 @@ nav > ul > li > a:active {
 }
 
 footer {
-  background-color: #f7f7f8;
   text-align: center;
 }
 
@@ -503,6 +496,15 @@ input[type=submit]:hover {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  .footer {
+    float: right;
+  }
+
+  .copyright {
+    float: left;
+    padding: 16px 0;
+  }
+
   .h1paragraph {
     font-size: 20px;
   }
