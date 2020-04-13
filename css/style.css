@@ -496,10 +496,6 @@ input[type=submit]:hover {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  .footer {
-    float: right;
-  }
-
   .copyright {
     float: left;
     padding: 16px 0;
